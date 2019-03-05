@@ -1,0 +1,5 @@
+'@rfluxmtx h=kf u=+Z
+void glow viewAperture 0 0 4 1 1 1 0
+viewAperture polygon viewPoly
+0 0 12
+4.9000 0.0000 0.1500 0.1000 0.0000 0.1500 0.1000 0.0000 3.1500 4.9000 0.0000 3.1500
