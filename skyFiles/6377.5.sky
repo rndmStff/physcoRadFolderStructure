@@ -1,0 +1,59 @@
+# gendaylit 9.0 23.0 17.5 -W 25.0 34.0 -a 46.47 -o -11.33 -m -15
+
+# Local solar time: 17.38
+
+# Solar altitude and azimuth: 6.1 83.0
+
+
+
+void light solar
+
+0
+
+0
+
+3 1.209e+05 1.209e+05 1.209e+05
+
+
+
+solar source sun
+
+0
+
+0
+
+4 -0.986836 -0.121957 0.106216 0.533000
+
+
+
+void brightfunc skyfunc
+
+2 skybright perezlum.cal
+
+0
+
+10 9.373e+00 4.574e-01 -1.692162 -0.713722 8.604153 -2.678537 0.175823 -0.986836 -0.121957 0.106216 
+
+
+skyfunc glow skyglow
+0
+0
+4 .99 .99 1.1 0
+
+skyglow source sky
+0
+0
+4 0 0 1 180
+
+void glow groundGlow
+0
+0
+4 .2 .2 .2 0
+
+groundGlow source GroundHem
+0
+0
+4 0 0 -1 180
+
+
+
