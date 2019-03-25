@@ -30,28 +30,33 @@ def interpPhysCo(fileName, outputFileName=None,timeInterInMin=1,startWithZeroRow
 
     tsteps=int(60/timeInterInMin)
 
-    with open(fileName) as fileData,open(outputFileName,"w") as csvStream:
+    with open(fileName) as fileData,open(outputFileName,"w",newline="") as csvStream:
 
         csvWrite=csv.writer(csvStream)
 
         for idx,lines in enumerate(fileData):
             lineSplit = lines.strip().split(",")
-            try:
 
-                nums=list(map(float,lineSplit))
-                if previousLine or startWithZeroRow:
-                    if not previousLine:
-                        previousLine = [nums[0] - 1] + [0] * (len(nums) - 1)
-                    for idx2,val2 in enumerate(range(int(60/timeInterInMin))):
-                        newList=["%.3f"%(previousLine[indx]+idx2*(nums[indx]-previousLine[indx])/tsteps) for indx,lval in enumerate(nums)]
-                        csvWrite.writerow(newList)
-                    previousLine=nums
-                else:
-                    previousLine=nums
-            except ValueError:
-                csvWrite.writerow(lineSplit)
-        csvWrite.writerow(lineSplit)
+            if lineSplit:
+
+                try:
+
+                    nums=list(map(float,lineSplit))
+                    if previousLine or startWithZeroRow:
+                        if not previousLine or ((nums[0]-previousLine[0])>24):
+                            if previousLine:
+                                csvWrite.writerow(["%.2f"%val for val in previousLine])
+                            previousLine = [nums[0] - 1] + [0] * (len(nums) - 1)
+                        for idx2,val2 in enumerate(range(int(60/timeInterInMin))):
+                            newList=["%.2f"%(previousLine[indx]+idx2*(nums[indx]-previousLine[indx])/tsteps) for indx,lval in enumerate(nums)]
+                            csvWrite.writerow(newList)
+                        previousLine=nums
+                    else:
+                        previousLine=nums
+                except ValueError:
+                        csvWrite.writerow(lineSplit)
+
 if __name__ == "__main__":
 
-    interpPhysCo("/mnt/E610176D10174449/scripts/physcoRadFolderStructure/withNoGeo/resultsPhysco3Ph/withNoGeo-Bolzano_Clear-Mnknfzl.csv",
+    interpPhysCo("/mnt/E610176D10174449/scripts/physcoRadFolderStructure/withGeo/resultsPhysco3Ph/withGeo-Bolzano_Clear-Mnknfzl.csv",
              timeInterInMin=1)
