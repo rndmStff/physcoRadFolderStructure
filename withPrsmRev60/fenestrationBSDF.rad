@@ -1,0 +1,5 @@
+void BSDF bsdfSrf 6 0 ./fenestrationKlems.xml 0 0 1 . 0 0
+
+bsdfSrf polygon Glass_0
+0 0 12
+4.9000 0.0000 0.1500 0.1000 0.0000 0.1500 0.1000 0.0000 3.1500 4.9000 0.0000 3.1500
