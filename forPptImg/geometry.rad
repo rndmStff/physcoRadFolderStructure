@@ -1,21 +1,5 @@
 # C:\Radiance\bin\obj2rad -f C:\soloCalc\reclined\tmp\back\MSH2RADFiles\back.obj
 # OBJ file written by TurtlePyMesh
-void plastic back 0 0 5 0 0 0 0 0
-void plastic head 0 0 5 0 0 0 0 0
-void plastic rightarm 0 0 5 0 0 0 0 0
-void plastic righthand 0 0 5 0 0 0 0 0
-void plastic leftarm 0 0 5 0 0 0 0 0
-void plastic chest 0 0 5 0 0 0 0 0
-void plastic leftfoot 0 0 5 0 0 0 0 0
-void plastic rightleg 0 0 5 0 0 0 0 0
-void plastic rightthigh 0 0 5 0 0 0 0 0
-void plastic leftleg 0 0 5 0 0 0 0 0
-void plastic leftshoulder 0 0 5 0 0 0 0 0
-void plastic leftthigh 0 0 5 0 0 0 0 0
-void plastic pelvis 0 0 5 0 0 0 0 0
-void plastic rightfoot 0 0 5 0 0 0 0 0
-void plastic lefthand 0 0 5 0 0 0 0 0
-void plastic rightshoulder 0 0 5 0 0 0 0 0
 
 back polygon object_1.1
 0

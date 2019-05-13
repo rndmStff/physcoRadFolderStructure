@@ -1,0 +1,23 @@
+void plastic back 0 0 5 1 1 1 0 0
+void plastic head 0 0 5 1 1 1 0 0
+void plastic rightarm 0 0 5 1 1 1 0 0
+void plastic righthand 0 0 5 1 1 1 0 0
+void plastic leftarm 0 0 5 1 1 1 0 0
+void plastic chest 0 0 5 1 1 1 0 0
+void plastic leftfoot 0 0 5 1 1 1 0 0
+void plastic rightleg 0 0 5 1 1 1 0 0
+void plastic rightthigh 0 0 5 1 1 1 0 0
+void plastic leftleg 0 0 5 1 1 1 0 0
+void plastic leftshoulder 0 0 5 1 1 1 0 0
+void plastic leftthigh 0 0 5 1 1 1 0 0
+void plastic pelvis 0 0 5 1 1 1 0 0
+void plastic rightfoot 0 0 5 1 1 1 0 0
+void plastic lefthand 0 0 5 1 1 1 0 0
+void plastic rightshoulder 0 0 5 1 1 1 0 0
+void plastic floor 0 0 5 0.1 0.1 0.1 0 0
+void plastic east 0 0 5 0.1 0.1 0.1 0 0
+void plastic ceiling 0 0 5 0.1 0.1 0.1 0 0
+void plastic north 0 0 5 0.1 0.1 0.1 0 0
+void plastic west 0 0 5 0.1 0.1 0.1 0 0
+void plastic south 0 0 5 0.1 0.1 0.1 0 0
+void glass southWindow 0 0 3 0.6 0.6 0.6
